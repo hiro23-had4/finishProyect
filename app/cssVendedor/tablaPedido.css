@@ -1,0 +1,18 @@
+.contenido_paginacion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+
+@media (max-width: 470px) {
+    .contenido_paginacion {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .buscador {
+        width: 70%;
+    }
+}
+

@@ -1,0 +1,53 @@
+.table_icon .contacto {
+    position: relative;
+    display: inline-flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.table_icon .contacto:hover::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ECF0F3;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #FFFFFF, inset 3px 3px 5px #CECED1;
+}
+
+.table_icon .contacto .icon_net {
+    position: relative;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    z-index: 5;
+}
+.table_icon .yt .icon_net {
+    color: #FF0000;
+}
+.table_icon .what .icon_net {
+    color: #25D366;
+} 
+
+.contenido_paginacion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+
+@media (max-width: 470px) {
+    .contenido_paginacion {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .buscador {
+        width: 70%;
+    }
+}

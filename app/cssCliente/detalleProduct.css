@@ -1,0 +1,84 @@
+/*DETALLE PRODUCTO CLIENTE*/
+.detalle {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.detalle_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 15px;
+}
+
+.detalle_image_foto .detalle_img_pro{
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 355px;
+}
+
+.detalle_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.detalle_nombre {
+    font-size: 30px;
+    color: #1c1f28;
+    font-weight: 900;
+}
+
+.detalle_empresa {
+    margin: 0;
+    color: #A5A1AA;
+}
+.detalle_info .detalle_precio {
+    font-size: 30px;
+    font-weight: 900;
+    color: #dc582a;
+}
+
+.detalle_descripcion {
+    text-align: justify;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.detalle_cantidad {
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.detalle_cantidad .number_quanty {
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+}
+.detalle_option .detalle_btn {
+    color: white;
+    background-color: #f17e13;
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+}
+
+.detalle_option .detalle_btn:hover {
+    background-color: #f17e13c5;
+}
+
+@media (max-width: 768px) {
+    .detalle_grid {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .detalle_option .detalle_btn {
+        width: 100%;
+    }
+}

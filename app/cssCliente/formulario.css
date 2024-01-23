@@ -1,0 +1,166 @@
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.form_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 3rem;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.form_image {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .212);
+    border-radius: 10px;
+    max-height: 1100px;
+}
+
+.form_texto--info h2 {
+    color: #e67e22;
+}
+.form_texto--info p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+.form_texto--info h3 {
+    font-size: 20px;
+    color: #e67e22;
+}
+
+.form_image--cliente {
+    margin-top: 2rem;
+}
+.form_image--cliente img {
+    height: 740px;
+}
+.form_header {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.form_header h1::after{
+    content: "";
+    display: block;
+    width: 25rem;
+    height: 0.3rem;
+    background-color: #f76307;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.form_photo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.input_box p,
+.input_box label {
+    font-weight: 500;
+    color: #000000c0;
+}
+
+.input_box input,
+.input_box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 1px 1px 6px #00000049;
+    border-radius: 10px;
+    color: #848484;
+}
+
+.input-file {
+    display: none; /* Oculta el input original */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #dedede;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.custom-file-upload:hover {
+    background-color: #45a049;
+    color: #FFFFFF;
+}
+
+.input_box input:hover,
+.input_box select:hover {
+    background-color: #e0e0e075;
+}
+
+.input_box input:focus-visible,
+.input_box select:focus-visible {
+    outline: 1px solid #f76307;
+}
+
+.form_btn button{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    background-color: #f76307;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form_btn button:hover {
+    background-color: #f76307d9;
+    transition: .7s;
+}
+
+.form_btn button a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1330px) {
+    .form_image {
+        display: none;
+    }
+    .form_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form_contenido {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .input_group {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 50rem;
+        padding: .5rem;
+    }
+    .input_group::-webkit-scrollbar {
+        width: 0;
+    }
+    .form_btn button{
+        width: 100%;
+    }
+} 
